@@ -6,6 +6,8 @@ $error-color-message: rgb(200, 16, 16);
 $input-border-color: #ccc;
 $border-radius: 4px;
 $modal-bg-color: rgba(0, 0, 0, 0.5);
+$modal-button: #007bff;
+$modal-button-hovered: #0056b3;
 
 body {
   font-family: Arial, sans-serif;
@@ -130,8 +132,8 @@ body.modal-open {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
-  color: #ffffff;
-  background-color: #007bff;
+  color: $secondary-color;
+  background-color: $modal-button;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -139,7 +141,7 @@ body.modal-open {
 }
 
 #openModalBtn:hover {
-  background-color: #0056b3;
+  background-color: $modal-button-hovered;
   transform: scale(1.05);
 }
 
